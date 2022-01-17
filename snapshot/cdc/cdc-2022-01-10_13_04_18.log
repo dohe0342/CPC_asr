@@ -1,0 +1,19 @@
+2022-01-10 13:04:20,178 - ===> loading train, validation and eval dataset
+2022-01-10 13:04:20,183 - ### Model summary below###
+ SpkClassifier(
+  (classifier): Sequential(
+    (0): Linear(in_features=256, out_features=512, bias=True)
+    (1): BatchNorm1d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Linear(in_features=512, out_features=251, bias=True)
+  )
+)
+
+2022-01-10 13:04:20,183 - ===> Model total parameter: 261371
+
+2022-01-10 13:04:20,267 - Train Epoch: 1 [0.0/28539 (0%)]	lr:0.00025	Accuracy: 0.0000	Loss: 6.449424
+2022-01-10 13:04:20,627 - Train Epoch: 1 [320.0/28539 (1%)]	lr:0.00150	Accuracy: 0.0000	Loss: 6.113841
+2022-01-10 13:04:20,978 - Train Epoch: 1 [640.0/28539 (2%)]	lr:0.00275	Accuracy: 0.0938	Loss: 5.202600
+2022-01-10 13:04:21,318 - Train Epoch: 1 [960.0/28539 (3%)]	lr:0.00400	Accuracy: 0.2500	Loss: 4.151486
+2022-01-10 13:04:21,655 - Train Epoch: 1 [1280.0/28539 (4%)]	lr:0.00525	Accuracy: 0.2812	Loss: 3.365815
+2022-01-10 13:04:21,994 - Train Epoch: 1 [1600.0/28539 (6%)]	lr:0.00650	Accuracy: 0.3125	Loss: 2.952672

@@ -1,0 +1,39 @@
+2022-01-13 01:11:17,504 - ===> loading train, validation and eval dataset
+2022-01-13 01:11:18,308 - ### Model summary below###
+ SpkClassifier(
+  (classifier): Sequential(
+    (0): Linear(in_features=256, out_features=512, bias=True)
+    (1): BatchNorm1d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Linear(in_features=512, out_features=251, bias=True)
+  )
+)
+
+2022-01-13 01:11:18,308 - ===> Model total parameter: 261371
+
+2022-01-13 01:11:18,701 - Train Epoch: 1 [0.0/28539 (0%)]	lr:0.00025	Accuracy: 0.0000	Loss: 5.519931
+2022-01-13 01:11:20,268 - Train Epoch: 1 [80.0/28539 (0%)]	lr:0.00150	Accuracy: 0.0625	Loss: 5.504258
+2022-01-13 01:11:21,812 - Train Epoch: 1 [160.0/28539 (1%)]	lr:0.00275	Accuracy: 0.1875	Loss: 5.427053
+2022-01-13 01:11:23,365 - Train Epoch: 1 [240.0/28539 (1%)]	lr:0.00400	Accuracy: 0.0625	Loss: 5.261754
+2022-01-13 01:11:24,902 - Train Epoch: 1 [320.0/28539 (1%)]	lr:0.00525	Accuracy: 0.1875	Loss: 4.658082
+2022-01-13 01:11:26,467 - Train Epoch: 1 [400.0/28539 (1%)]	lr:0.00650	Accuracy: 0.2500	Loss: 3.793353
+2022-01-13 01:11:28,006 - Train Epoch: 1 [480.0/28539 (2%)]	lr:0.00775	Accuracy: 0.1875	Loss: 2.922137
+2022-01-13 01:11:29,554 - Train Epoch: 1 [560.0/28539 (2%)]	lr:0.00900	Accuracy: 0.1250	Loss: 3.196176
+2022-01-13 01:11:31,126 - Train Epoch: 1 [640.0/28539 (2%)]	lr:0.01025	Accuracy: 0.1875	Loss: 3.311119
+2022-01-13 01:11:32,714 - Train Epoch: 1 [720.0/28539 (3%)]	lr:0.01150	Accuracy: 0.1875	Loss: 2.789531
+2022-01-13 01:11:34,299 - Train Epoch: 1 [800.0/28539 (3%)]	lr:0.01238	Accuracy: 0.1250	Loss: 3.226978
+2022-01-13 01:11:35,871 - Train Epoch: 1 [880.0/28539 (3%)]	lr:0.01181	Accuracy: 0.1250	Loss: 2.931824
+2022-01-13 01:11:37,438 - Train Epoch: 1 [960.0/28539 (3%)]	lr:0.01132	Accuracy: 0.1250	Loss: 2.989835
+2022-01-13 01:11:38,994 - Train Epoch: 1 [1040.0/28539 (4%)]	lr:0.01088	Accuracy: 0.1875	Loss: 2.703419
+2022-01-13 01:11:40,551 - Train Epoch: 1 [1120.0/28539 (4%)]	lr:0.01049	Accuracy: 0.1250	Loss: 2.963033
+2022-01-13 01:11:42,114 - Train Epoch: 1 [1200.0/28539 (4%)]	lr:0.01014	Accuracy: 0.1875	Loss: 2.642748
+2022-01-13 01:11:43,686 - Train Epoch: 1 [1280.0/28539 (4%)]	lr:0.00982	Accuracy: 0.1250	Loss: 2.844914
+2022-01-13 01:11:45,241 - Train Epoch: 1 [1360.0/28539 (5%)]	lr:0.00953	Accuracy: 0.1250	Loss: 2.981076
+2022-01-13 01:11:46,800 - Train Epoch: 1 [1440.0/28539 (5%)]	lr:0.00927	Accuracy: 0.1875	Loss: 2.772264
+2022-01-13 01:11:48,387 - Train Epoch: 1 [1520.0/28539 (5%)]	lr:0.00902	Accuracy: 0.1250	Loss: 2.899289
+2022-01-13 01:11:49,973 - Train Epoch: 1 [1600.0/28539 (6%)]	lr:0.00879	Accuracy: 0.1875	Loss: 2.896329
+2022-01-13 01:11:51,553 - Train Epoch: 1 [1680.0/28539 (6%)]	lr:0.00859	Accuracy: 0.1875	Loss: 2.890178
+2022-01-13 01:11:53,147 - Train Epoch: 1 [1760.0/28539 (6%)]	lr:0.00839	Accuracy: 0.2500	Loss: 2.673224
+2022-01-13 01:11:54,719 - Train Epoch: 1 [1840.0/28539 (6%)]	lr:0.00821	Accuracy: 0.1250	Loss: 3.289770
+2022-01-13 01:11:56,299 - Train Epoch: 1 [1920.0/28539 (7%)]	lr:0.00804	Accuracy: 0.2500	Loss: 2.796555
+2022-01-13 01:11:57,886 - Train Epoch: 1 [2000.0/28539 (7%)]	lr:0.00787	Accuracy: 0.1250	Loss: 2.749395

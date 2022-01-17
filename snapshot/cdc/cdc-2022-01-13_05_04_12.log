@@ -1,0 +1,11 @@
+2022-01-13 05:04:14,386 - ===> loading train, validation and eval dataset
+2022-01-13 05:04:15,197 - ### Model summary below###
+ GRU_DEC(
+  (emb): Linear(in_features=29, out_features=256, bias=True)
+  (gru): GRU(256, 256, batch_first=True)
+  (fc): Linear(in_features=256, out_features=29, bias=True)
+  (softmax): LogSoftmax(dim=1)
+)
+
+2022-01-13 05:04:15,198 - ===> Model total parameter: 409885
+

@@ -1,0 +1,13 @@
+CUDA_VISIBLE_DEVICES=0 python main_v2.py \
+	--train-raw LibriSpeech/train-Librispeech.h5 \
+	--validation-raw LibriSpeech/dev-Librispeech.h5 \
+	--eval-raw LibriSpeech/test-Librispeech.h5 \
+	--train-list LibriSpeech/list/train.txt \
+	--validation-list LibriSpeech/list/validation.txt \
+	--eval-list LibriSpeech/list/eval.txt \
+	--logging-dir snapshot/cdc/ \
+	--log-interval 50 \
+	--audio-window 20480 \
+	--timestep 12 \
+	--masked-frames 10 \
+	--n-warmup-steps 1000 

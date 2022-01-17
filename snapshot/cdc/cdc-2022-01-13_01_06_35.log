@@ -1,0 +1,13 @@
+2022-01-13 01:06:36,805 - ===> loading train, validation and eval dataset
+2022-01-13 01:06:37,613 - ### Model summary below###
+ SpkClassifier(
+  (classifier): Sequential(
+    (0): Linear(in_features=256, out_features=512, bias=True)
+    (1): BatchNorm1d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Linear(in_features=512, out_features=251, bias=True)
+  )
+)
+
+2022-01-13 01:06:37,613 - ===> Model total parameter: 261371
+
