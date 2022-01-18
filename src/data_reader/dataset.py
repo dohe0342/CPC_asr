@@ -433,7 +433,7 @@ class RawDatasetAsrClass(data.Dataset):
         utt_id = self.utts[index] # get the utterance id 
         utt_len = self.h5f[utt_id].shape[0] # get the number of data points in the utterance
         data = torch.Tensor(self.h5f[utt_id][:])
-        zeropadding_num = 20*self.audio_window - utt_len
+        zeropadding_num = 30*self.audio_window - utt_len
         data_pad_num = int(zeropadding_num / self.audio_window) 
 
         data_len = int(utt_len/self.audio_window) + 1

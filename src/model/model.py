@@ -347,7 +347,7 @@ class CDCK2(nn.Module):
         z = self.encoder(x)
         new_z = []
         for i in range(batch):
-            new_z.append(z[i,:,:seq_len[i].item()*128])
+            new_z.append(z[i,:,:(seq_len[i].item()+1)*128])
         # encoded sequence is N*C*L, e.g. 8*512*128
         # reshape to N*L*C for GRU, e.g. 8*128*512
         output_list = []
@@ -407,7 +407,8 @@ class GRU_DEC(nn.Module):
 
     def forward(self, x, h): 
         with torch.autograd.set_detect_anomaly(True):
-            input = self.emb(x).view(1, 1, -1) 
+            batch_size = x.size()[0]
+            input = self.emb(x).view(batch_size, 1, -1) 
             out, h_out = self.gru(input, h)
 
             out = self.softmax(self.fc(out.reshape(out.shape[0], -1)))
@@ -454,3 +455,18 @@ class GRU_DEC_ATTN(nn.Module):
   
       def initHidden(self):
           return torch.zeros(num_layers, batch_size, self.hidden_size, device=device)
+
+
+class CTC(nn.Module):
+      def __init__(self, input_size, output_size):
+          super(CTC, self).__init__()
+          self.input_size = input_size
+          self.output_size = output_size
+      
+          self.clf = nn.Linear(self.input_size, self.output_size)
+          self.bn = nn.BatchNorm1d(self.output_size)
+          self.softmax = nn.LogSoftmax(dim=1)
+  
+      def forward(self, input):
+          output = self.softmax(self.clf(input))
+          return output

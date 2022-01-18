@@ -1,4 +1,4 @@
-CUDA_VISIBLE_DEVICES=0 python asr_train.py \
+CUDA_VISIBLE_DEVICES=0 python asr_train_v2.py \
 	--raw-hdf5 LibriSpeech/train-clean-100.h5 \
 	--train-list LibriSpeech/list/train_gt.txt \
 	--validation-list LibriSpeech/list/spk_val.txt \
